@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+html,
+body,
+main,
+footer {
+  font-family: "Anta", Arial, sans-serif !important;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body {
+  background-image: url("image/fond-accueil-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-color: #6e00b8;
+  height: 100dvh;
+  background-attachment: fixed;
+}
+/* main,
+footer {
+  font-size: 100% !important;
+  overflow-x: hidden;
+  overflow-y: hidden;
+} */
+@media screen and (max-width: 450px) {
+  main,
+  footer {
+    font-size: 80% !important;
+  }
+}
+.contenu-page {
+  padding: 0 20% 0 20%;
+  min-height: 800px;
+}
+.marge {
+  padding: 75px 20% 100px 20%;
+}
+@media screen and (max-width: 1200px) {
+  .contenu-page {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+  .marge {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+}
+@media screen and (max-width: 1000px) {
+  .contenu-page {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+  .marge {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+}
+/* Bouton pour revenire en haut */
+#boutonHaut {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 100;
+  padding: 12px 20px;
+  font-size: 250%;
+  border: none;
+  text-align: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: #8900ac7c;
+  color: #ffffff;
+}
+/* Bouton pour revenire à l'accueil */
+.retourAccueil {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  z-index: 9999;
+}
+.retourAccueil img {
+  height: 50px;
+  width: auto;
+}
+/* Bouton-Animation*/
+.boutonT1 {
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(79, 140, 255, 0.15);
+  transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.boutonT1:hover,
+.boutonT1:focus {
+  background: #9900ff !important;
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.18);
+}
+
+.boutonT1-2 {
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(79, 140, 255, 0.15);
+  transition: 
+    background 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.boutonT1-2:hover,
+.boutonT1-2:focus {
+  background: linear-gradient(to bottom, #9900ff 0%, #cc66ff 100%) !important;
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.18);
+}
+
+.boutonT1-3 {
+  cursor: pointer;
+  background: linear-gradient(to bottom, #9900ff 0%, #cc66ff 100%) bottom / 100% 0% no-repeat;
+  transition: background-size 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.boutonT1-3:hover,
+.boutonT1-3:focus {
+  background-size: 100% 100%;
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.18);
+}
+
+.boutonT1-4 {
+  cursor: pointer;
+  background: linear-gradient(to bottom, #6e00b8 0%, #bd39ff 100%) top / 100% 0% no-repeat;
+  transition: background-size 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.boutonT1-4:hover,
+.boutonT1-4:focus {
+  background-size: 100% 100%;
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.18);
+}
+
+.boutonT2 {
+  cursor: pointer;
+  box-shadow: 0 2px 8px none;
+  transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.boutonT2:hover,
+.boutonT2:focus {
+  transform: scale(1.15);
+  box-shadow: 0 8px 24px none;
+}
+
+.boutonT2-1 {
+  cursor: pointer;
+  box-shadow: 0 2px 8px none;
+  transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.boutonT2-1:hover,
+.boutonT2-1:focus {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px none;
+}
+
+.boutonT3 {
+  cursor: pointer;
+  box-shadow: 0 2px 8px none;
+  transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.boutonT3:hover,
+.boutonT3:focus {
+  transform: scale(1.3);
+  box-shadow: 0 8px 24px none;
+}
+/* Apparition  */
+
+/* De la droite */
+.slide-droite {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.slide-droite.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+/* De la gauche */
+.slide-gauche {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.slide-gauche.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+/* Du bas */
+.slide-bas {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.slide-bas.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Du haut */
+.slide-haut {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.slide-haut.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* D'un bas-gauche */
+.slide-bas-gauche {
+  opacity: 0;
+  transform: translate(-100px, 100px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.slide-bas-gauche.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+@media screen and (max-width: 500px) {
+  .slide-bas-gauche {
+    transform: translate(-60px, 60px);
+  }
+}
+
+.apparition-centre {
+  opacity: 0.5;
+  transform: scale(0.5);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.apparition-centre.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+.apparition-centre-l /* l pour longue temporairement */ {
+  opacity: 0.1;
+  transform: scale(0);
+  transition: opacity 1.4s, transform 1.4s;
+}
+.apparition-centre-l.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+.apparition-centre-p /* p pour petite en taille et temporairement */ {
+  opacity: 0.7;
+  transform: scale(0.8);
+  transition: opacity 0.5s, transform 0.5s;
+}
+.apparition-centre-p.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.custom-header, .navbar  {
+  padding-left: 20%;
+  padding-right: 25%;
+  background-color: #6e00b8;
+}
+.nav-link {
+  font-size: 130% !important;
+}
+@media screen and (max-width: 1200px) {
+  .custom-header, .navbar  {
+  padding-left: 10%;
+  padding-right: 1%;
+}
+}
+@media screen and (max-width: 1000px) {
+  .custom-header, .navbar  {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+}
+/* Le footer */
+.leFooter {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between ;
+  background-color: #6e00b8;
+  color: white;
+  padding: 1% 20%;
+}
+@media screen and (max-width: 1200px) {
+  .leFooter  {
+  padding: 1% 10%;
+}
+}
+@media screen and (max-width: 1000px) {
+  .leFooter  {
+  padding: 1% 5%;
+}
+}
+@media screen and (max-width: 500px) {
+  .leFooter  {
+  flex-direction: column;
+  align-items: center;
+}
+}
+.leFooter div
+{
+  padding: 15px 0;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 110%;
+}
+@media screen and (max-width: 500px) {
+.leFooter div {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+}
+.leFooter a {
+  height: 200px;
+}
+@media screen and (max-width: 1000px) {
+  .leFooter a {
+  height: 100px;
+}
+}
+.leFooter a img {
+  height: 100%;
+  width: auto;
+}
+.leFooter div p a {
+  color: #ffffff;
+  text-decoration: none;
+}
+/* Le header */
+.navbar-brand {
+  height: 5dvh;
+}
+.navbar-brand img {
+  height: 100%;
+  width: auto;
+}
+/* background  */
+/* .background-Violet {
+  background-image: url("image/fond-accueil-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-color: #6e00b8;
+  height: 100dvh;
+  background-attachment: fixed;
+} */
+
+.background-Blanc {
+  background-color: #dbdbdb;
+  padding: 5%;
+}
+@media screen and (max-width: 475px) {
+  .background-Blanc {
+  background-color: #dbdbdb;
+  padding: 3% 1.5%;
+  }
+}
+/* page d'accueil */
+.page-accueil {
+  position: relative;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+@media screen and (max-width: 475px) {
+  .page-accueil h1{
+    text-align: center;
+  }
+}
+.page-accueil h1 strong{
+  font-size: 300%;
+}
+.BoutonAccueil {
+  position: fixed;
+  height: 90dvh;
+  top: 10dvh;
+  right: 10dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  z-index: 9999;
+}
+@media screen and (max-width: 1150px) {
+.BoutonAccueil {
+  right: 5dvh;
+}
+}
+@media screen and (max-width: 1050px) {
+  .BoutonAccueil {
+    height: auto;
+    width: 100dvw;
+    top: auto;
+    right: auto;
+    bottom: 30dvh;
+    flex-direction: row;
+    gap: 5%;
+  }
+  @media screen and (max-height: 650px) {
+  .BoutonAccueil {
+    bottom: 20dvh;
+  }
+  }
+  @media screen and (max-height: 330px) {
+  .BoutonAccueil {
+    bottom: 10dvh;
+  }
+} 
+}
+.BoutonAccueil a {
+  font-size: 140%;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+
+/* Certification */
+.cetification-bouton {
+  min-height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+@media screen and (max-width: 750px) {
+.cetification-bouton {
+  margin-top: 20px;
+  flex-direction: column;
+  width: 100%;
+  gap: 5vh;
+}
+}
+.cetification-bouton a {
+  text-align: center;
+  align-items: end;
+  width: 40%;
+  aspect-ratio: 1 / 0.75;
+  font-size: 5vmin ;
+  border-radius: 15%;
+  border: 2px solid black;
+  color: black;
+  text-decoration: none;
+}
+@media screen and (max-width: 750px) {
+.cetification-bouton a {
+  width: 80%;
+  font-size: 10vmin ;
+  aspect-ratio: 1 / 0.5;
+}
+}
+@media screen and (max-width: 475px) {
+.cetification-bouton a {
+  width: 100%;
+}
+}
+.cetification-bouton a strong {
+  font-size: 15vmin ;
+}
+.XD3OZDWaaGlpcgdNKhaN3Krqs8PqkHi4M5KMn0ldqJppQldFuQM0CxNY5FJZ_154334_29112025 {
+  aspect-ratio: 1 / 0.78;
+}
