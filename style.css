@@ -19,6 +19,11 @@ body {
   height: 100dvh;
   background-attachment: fixed;
 }
+@media screen and (max-width: 900px) {
+  body {
+    background-image: url("image/fond-accueil-2.png");
+  }
+}
 /* main,
 footer {
   font-size: 100% !important;
@@ -489,3 +494,4 @@ footer {
 .Présentation-de-tryhackme-RF {
   aspect-ratio: 29,7 / 21;
 }
+
