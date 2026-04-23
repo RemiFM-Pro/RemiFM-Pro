@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>RFILLON — Portfolio BTS</title>
+    <link rel="icon" href="./images/logo0.1.png" type="image/png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bacgkground-image">
+    <!-- <script src="./js/nav.js"></script> -->
+
+    <main class="page-accueil">
+        <h1 id="typed"></h1>
+    </main>
+
+    <div class="BoutonAccueil slide-droite">
+        <a class="boutonT3" href="./pages/parcours.html">Mon Parcours</a>
+        <a class="boutonT3" href="./pages/profil.html">Mon Profil</a>
+        <a class="boutonT3" href="./pages/certification.html">Certifications</a>
+        <a class="boutonT3" href="./pages/projets.html">Mes Projets</a>
+        <!-- <a class="boutonT3" href="./pages/veille.html">Veille</a> -->
+        <a class="boutonT3" href="./pages/contact.html">Me Contacter</a>
+    </div>
+
+    <script>
+        const message = `<strong>Bonjour,</strong><br> je m'appelle Rémi, un developpeur`;
+        const speed = 50;
+        let index = 0;
+        let typed = '';
+
+        function typeWriterHTML() {
+            if (index < message.length) {
+                if (message[index] === '<') {
+                    const closeIndex = message.indexOf('>', index);
+                    typed += message.slice(index, closeIndex + 1);
+                    index = closeIndex + 1;
+                } else {
+                    typed += message[index];
+                    index++;
+                }
+                document.getElementById("typed").innerHTML = typed;
+                setTimeout(typeWriterHTML, speed);
+            }
+        }
+        typeWriterHTML();
+    </script>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
