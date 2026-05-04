@@ -21,7 +21,7 @@
                 
                 <li class="nav-item"><a class="nav-link" href="${r}pages/projets.html" style="color:#fff;">Projets</a></li>
                 
-                <!-- <li class="nav-item"><a class="nav-link" href="${r}pages/veille.html" style="color:#fff;">Veille</a></li> -->
+                <li class="nav-item"><a class="nav-link" href="${r}pages/veille.html" style="color:#fff;">Veille</a></li>
                 <li class="nav-item"><a class="nav-link" href="${r}pages/certification.html" style="color:#fff;">Certifications</a></li>
                 <li class="nav-item"><a class="nav-link" href="${r}pages/contact.html" style="color:#fff;">Contact</a></li>
             </ul>
