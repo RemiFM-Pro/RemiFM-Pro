@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<!-- Ce qui est aficher dans l'onglet -->
+		<title>Actualités - Maître Marine HEBRAUD - Avocat</title>
+		<link rel="icon" href="./archives/Marine-HEBRAUD/image/iconOngletSimple.png" type="image/vnd.microsoft.png">
+		<meta charset="UTF-8">
+		<!-- Pour éviter le zoom --> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<!-- CSS -->
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+	<body>
+		<header class="enTête">
+			<!-- Logo -->
+
+			<div>
+				<a href="./archives/Marine-HEBRAUD/">
+					<img class="enTête-Lelogo" src="./archives/Marine-HEBRAUD/image/iconOngletSimple.png" alt="Logo">
+				</a>
+			</div>
+			<nav class="enTête-menu">
+				<a class="boutonT2" href="./archives/Marine-HEBRAUD/">Accueil</a>
+				<a class="boutonT2" href="./archives/Marine-HEBRAUD/actualite">Actualités</a>
+				<a class="boutonT2" href="./archives/Marine-HEBRAUD/honoraire">Honoraires</a>
+				<a class="boutonT2" href="./archives/Marine-HEBRAUD/contact">Contact</a>
+				<a class="enTête-email">hebraudavocat@gmail.com</a>
+			</nav>
+			<div class="enTête-menuPhone" onclick="toggleMenu()">
+				<img class="enTête-troisPoints" src="./archives/Marine-HEBRAUD/image/troisPoint.png"alt="Logo">
+			</div>
+			<ul class="enTête-menuElément" id="menu">
+				<li><a href="./archives/Marine-HEBRAUD/">Accueil</a></li>  
+				<li><a href="./archives/Marine-HEBRAUD/actualite">Actualités</a></li>
+				<li><a href="./archives/Marine-HEBRAUD/honoraire">Honoraires</a></li>
+				<li><a href="./archives/Marine-HEBRAUD/contact">Contact</a></li>
+			</ul>
+		</header>
+		<!-- Contenu de la page -->
+		<main class="main actualité">
+			<a class="Actualité-Partie1" href="./archives/Marine-HEBRAUD/actualite-details-dcm">
+				<div class="Actualité-text1 boutonT2-1">
+					<h1>Le divorce par consentement mutuel : une procédure simplifiée ?</h1>
+					<div class="Actualité-Image-mobile">
+						<img class="apparition-centre-l" src="./archives/Marine-HEBRAUD/image/actualite/image1.png">
+					</div>
+					<p>Le divorce est souvent perçu comme une procédure longue, complexe et émotionnellement éprouvante. Pourtant, le divorce par consentement mutuel, également appelé divorce amiable, propose une alternative plus rapide et moins conflictuelle. Mais qu’en est-il réellement ? Est-ce un divorce simplifié ? Quel est le rôle de l’avocat dans ce processus ? Faisons le point...</p>
+				</div>
+				<div class="Actualité-Image1">
+					<img class="apparition-centre-l" src="./archives/Marine-HEBRAUD/image/actualite/image1.png">
+				</div>
+			</a>
+			<a class="Actualité-Partie2" href="./archives/Marine-HEBRAUD/actualite-details-rh">
+				<div class="Actualité-text2 boutonT2-1">
+					<h1>La procédure accélérée au fond : Un outil permettant de débloquer dans certaines circonstances les successions</h1>
+					<div class="Actualité-Image-mobile">
+						<img class="apparition-centre-l" src="./archives/Marine-HEBRAUD/image/actualite/image21.png">
+					</div>
+					<p>La gestion d’une succession peut parfois s’avérer complexe, notamment lorsque des conflits entre héritiers ralentissent la transmission du patrimoine. Pour remédier à ces situations, le législateur a prévu des mécanismes destinés à accélérer la résolution des litiges...</p>
+				</div>
+				<div class="Actualité-Image2">
+					<img class="apparition-centre-l" src="./archives/Marine-HEBRAUD/image/actualite/image21.png">
+				</div>
+			</a>
+			<!-- ?php
+			$nombreActualite = count($config['actualites']);
+			$typeActualite = 1;
+			for($i=1;$i<=$nombreActualite;$i=$i+1)
+			{
+				echo '<a class="Actualité-Partie'.$typeActualite.'" href="'.$config['actualites'][$i]['lien_href'].'">
+						<div class="Actualité-text'.$typeActualite.' boutonT2-1">
+							<h1>'.htmlspecialchars($config['actualites'][$i]['titre']).' ></h1>
+							<div class="Actualité-Image-mobile">
+								<img class="apparition-centre-l" src="'.$config['actualites'][$i]['image_src'].'">
+							</div>
+							<p>'.htmlspecialchars($config['actualites'][$i]['resume']).'</p>
+						</div>
+						<div class="Actualité-Image'.$typeActualite.'">
+							<img class="apparition-centre-l" src="'.$config['actualites'][$i]['image_src'].'">
+						</div>
+					</a>';
+				if($typeActualite == 1)
+				{
+					$typeActualite = 2;
+				}
+				else
+				{
+					$typeActualite = 1;
+				}
+			}
+			?> -->
+			<div class="Actualité-Séparation"></div>
+		</main>
+		<footer class="piedDePage">
+			<!-- Logo -->
+			<a href="./archives/Marine-HEBRAUD/" class="piedDePage-logo">
+				<img src="./archives/Marine-HEBRAUD/image/iconOngletText.jpg">
+			</a>
+			<div class="piedDePage-elements">
+				<p class="piedDePage-UnElements boutonT2"><a href="./archives/Marine-HEBRAUD/contact">Contacter le Cabinet</a></p>
+				<p class="piedDePage-UnElements">hebraudavocat@gmail.com</p>
+				<p class="piedDePage-UnElements">07 63 92 82 62</p>
+				<p class="piedDePage-UnElements">33 rue des Halles à ANCENIS-SAINT-GEREON (44150)</p>
+				<p class="piedDePage-UnElements">Case Palais n°184</p>
+			</div>
+			<div">
+				<p class="boutonT2" ><a href="./archives/Marine-HEBRAUD/mentions-legales">Mentions légales</a></p>
+			</div>
+		</footer>
+		<button id="boutonHaut" style="display:none;" class="boutonT1"><img src="./archives/Marine-HEBRAUD/image/monter.png"></button>
+    </body>
+	<script src="script.js"></script>
+</html> 

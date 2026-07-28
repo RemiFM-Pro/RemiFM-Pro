@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<!-- Ce qui est aficher dans l'onglet -->
+		<title>Contact - Maître Marine HEBRAUD - Avocat</title>
+		<link rel="icon" href="./archives/Marine-HEBRAUD/image/iconOngletSimple.png" type="image/vnd.microsoft.png">
+		<meta charset="UTF-8">
+		<!-- Pour éviter le zoom --> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<!-- CSS -->
+        <link rel="stylesheet" href="style.css"/>
+		<!-- reCAPTCHA v3 -->
+		<!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
+		<!-- <script>
+			function onSubmit(token) {
+			document.getElementById("demo-form").submit();
+		} -->
+		</script>
+    </head>
+	<body>
+		<header class="enTête">
+			<!-- Logo -->
+
+			<div>
+				<a href="./archives/Marine-HEBRAUD/">
+					<img class="enTête-Lelogo" src="./archives/Marine-HEBRAUD/image/iconOngletSimple.png" alt="Logo">
+				</a>
+			</div>
+			<nav class="enTête-menu">
+				<a class="boutonT2" href="./archives/Marine-HEBRAUD/">Accueil</a>
+				<a class="boutonT2" href="./archives/Marine-HEBRAUD/actualite">Actualités</a>
+				<a class="boutonT2" href="./archives/Marine-HEBRAUD/honoraire">Honoraires</a>
+				<a class="boutonT2" href="./archives/Marine-HEBRAUD/contact">Contact</a>
+				<a class="enTête-email">hebraudavocat@gmail.com</a>
+			</nav>
+			<div class="enTête-menuPhone" onclick="toggleMenu()">
+				<img class="enTête-troisPoints" src="./archives/Marine-HEBRAUD/image/troisPoint.png"alt="Logo">
+			</div>
+			<ul class="enTête-menuElément" id="menu">
+				<li><a href="./archives/Marine-HEBRAUD/">Accueil</a></li>  
+				<li><a href="./archives/Marine-HEBRAUD/actualite">Actualités</a></li>
+				<li><a href="./archives/Marine-HEBRAUD/honoraire">Honoraires</a></li>
+				<li><a href="./archives/Marine-HEBRAUD/contact">Contact</a></li>
+			</ul>
+		</header>
+		<!-- Contenu de la page -->
+		<main class="main contact">
+			<div class="contact-Partie1">
+				<div>
+					<h1 class="contact-Titre slide-gauche">Contactez-moi</h1>
+					<p>Maître Marine HEBRAUD</p>
+					<p class="aLm">Présente à Nantes et à Ancenis</p>
+					<p>hebraudavocat@gmail.com</p>
+					<p>07 63 92 82 62</p>
+				</div>
+				<div class="contact-image">
+					<img src="./archives/Marine-HEBRAUD/image/accueil/maitreMarineHebraud.jpg" alt="Maitre Marine Hebraud">
+				</div>
+			</div>
+			<div class="contact-Partie2">
+				<div class="contact-Carte apparition-centre-l">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2702.397571663031!2d-1.1808965231865185!3d47.36515840461839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480603627aed9bbd%3A0xddb72302292ed45d!2s33%20Rue%20des%20Halles%2C%2044150%20Ancenis-Saint-G%C3%A9r%C3%A9on!5e0!3m2!1sfr!2sfr!4v1750769644267!5m2!1sfr!2sfr" 
+						width="100%"
+						maxwidth="700"
+						height="450"
+						style="border:0;" 
+						allowfullscreen="" 
+						loading="lazy" 
+						referrerpolicy="no-referrer-when-downgrade">
+					</iframe>
+				</div>
+				<div class="contact-Partie2-Text">
+					<p>Cabinet d'Avocat Marine HEBRAUD</p>
+					<p>Adresse : 33 rue des Halles à ANCENIS-SAINT-GEREON (44150)</p>
+					<p>Case Palais n°184</p>
+				</div>
+			</div>
+			<div class="contact-formulaire" id="formulaireContact">
+				<form action="" method="POST" id="demo-form">
+					<table class="formulaire-table">
+						<!-- ?php
+							if ($Result !== null) 
+							{
+								if ($Result == true) 
+								{
+									echo "<tr class='slide-bas'><td></td><td class='formulaire-success slide-droite'><p>Message envoyé avec succès.</p></td></tr>";
+								} 
+								else
+								{
+									$afficheErreur = isset($Erreur) ? $Erreur : "Une erreur inconnue s'est produite lors de l'envoi du message.";
+									echo "<tr class='slide-bas'><td class='formulaire-label slide-bas-gauche'><label>Erreur : </label></td><td class='formulaire-erreur slide-droite'><p>" . htmlspecialchars($afficheErreur) . "</p></td></tr>";
+								}
+							}
+						?> -->
+						<tr class='slide-bas'><td class='formulaire-label slide-bas-gauche'><label>Erreur : </label></td><td class='formulaire-erreur slide-droite'><p>Le formulaire est actuellement désactivé.</p></td></tr>
+
+						<tr class="slide-bas"><td class="formulaire-label slide-bas-gauche"><label for="prenom">Prénom : </label></td><td><input type="text" id="prenom" name="prenom" minlength="2" maxlength="100" placeholder="Prénom" required value="<?php echo isset($old_prenom) ? htmlspecialchars($old_prenom) : ''; ?>"></td></tr>
+						<tr class="slide-bas"><td class="formulaire-label slide-bas-gauche"><label for="nom">Nom : </label></td><td><input type="text" id="nom" name="nom" minlength="2" maxlength="100" placeholder="Nom" required value="<?php echo isset($old_message) ? htmlspecialchars($old_nom) : ''; ?>"></td></tr>
+						<tr class="slide-bas"><td class="formulaire-label slide-bas-gauche"><label for="email">Email : </label></td><td><input type="email" id="email" name="email" maxlength="200" placeholder="Email" required value="<?php echo isset($old_email) ? htmlspecialchars($old_email) : ''; ?>"></td></tr>
+						<tr class="slide-bas"><td class="formulaire-label slide-bas-gauche"><label for="raison">Raison : </label></td>
+							<td>
+								<table>
+                                    <tbody>
+										<tr class="slide-droite visible"><td><input class="boutonT3" type="radio" id="question" name="raison" value="question" required=""></td><td><label for="question">Question</label></td></tr>
+										<tr class="slide-droite visible"><td><input class="boutonT3" type="radio" id="demande" name="raison" value="demande" required=""></td><td><label for="demande">Demande de rendez-vous</label></td></tr>
+										<tr class="slide-droite visible"><td><input class="boutonT3" type="radio" id="commentaire" name="raison" value="commentaire" required=""></td><td><label for="commentaire">Laisser un commentaire</label></td></tr>
+										<tr class="slide-droite visible"><td><input class="boutonT3" type="radio" id="autre" name="raison" value="autre" required=""></td><td><label for="autre">Autre</label></td></tr>                                
+									</tbody>
+								</table>
+							</td>
+						</tr>
+						<tr class="slide-bas"><td class="formulaire-label slide-bas-gauche"><label for="message">Message : </label></td><td><textarea id="message" name="message" minlength="5" maxlength="1000" placeholder="Min 5, max 1000 caractère" required><?php echo isset($old_message) ? htmlspecialchars($old_message, ENT_NOQUOTES, 'UTF-8') : ''; ?></textarea></td></tr>
+					</table>
+					<div class="slide-bas"><button class="g-recaptcha boutonT1" data-sitekey="" data-callback='onSubmit' data-action='submit'>Envoyer</button></div>
+				</form>
+				<p class="mention-reCAPTCHA">Ce site est protégé par reCAPTCHA et la <a href="https://policies.google.com/privacy" target="_blank">politique de confidentialité</a> et les <a href="https://policies.google.com/terms" target="_blank"> conditions d'utilisation</a> de Google s'appliquent.</p>
+			</div>
+			<!-- <script>
+				?php if ($Result !== null): ?>
+					window.addEventListener('DOMContentLoaded', function() {
+						var form = document.getElementById('formulaireContact');
+						if(form) {
+							form.scrollIntoView({behavior: "smooth", block: "center"});
+						}
+					});
+				?php endif; ?>
+			</script> -->
+		</main>
+		<div class="Actualité-Séparation"></div>
+		<footer class="piedDePage">
+			<a href="./archives/Marine-HEBRAUD/" class="piedDePage-logo">
+				<img src="./archives/Marine-HEBRAUD/image/iconOngletText.jpg">
+			</a>
+			<a class="boutonT2" href="./archives/Marine-HEBRAUD/mentions-legales">Mentions légales</a>
+		</footer>
+		<button id="boutonHaut" style="display:none;" class="boutonT1"><img src="./archives/Marine-HEBRAUD/image/monter.png"></button>
+    </body>
+	<script src="script.js"></script>
+</html>
